@@ -11,7 +11,7 @@ let package = Package(
             targets: ["HCKalmanFilter"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Jounce/Surge", from: "2.0.0"),
+        .package(url: "https://github.com/Jounce/Surge.git", .upToNextMajor(from: "2.0.0"))
     ],
     targets: [
         .target(

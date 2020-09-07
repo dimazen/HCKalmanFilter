@@ -20,7 +20,7 @@ DEPENDENCIES:
   - Surge (~> 2.3)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - ActionSheetPicker-3.0
     - GoogleMaps
     - GooglePlacePicker
@@ -34,6 +34,6 @@ SPEC CHECKSUMS:
   GooglePlaces: e874db179f2675c4f3eeda0b686b540273a578b0
   Surge: 13979cd9593e943f9ce1202439da2999ea57e46d
 
-PODFILE CHECKSUM: c30d8b3f435689a477bdecd1c94c22181f91534c
+PODFILE CHECKSUM: 30c575e3732184c4d7e3f67d8c15c430181e6df4
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
