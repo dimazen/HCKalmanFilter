@@ -180,6 +180,10 @@ open class HCKalmanAlgorithm
         // Calculate timeInterval between last and current measure
         let timeInterval = newMeasureTimeSeconds - lastMeasureTimeSeconds
         
+        if timeInterval == 0 {
+            return previousLocation
+        }
+        
         // Calculate and set Prediction Step Matrix based on new timeInterval value
         A.setMatrix(matrix: [[1,Double(timeInterval),0,0,0,0],[0,1,0,0,0,0],[0,0,1,Double(timeInterval),0,0],[0,0,0,1,0,0],[0,0,0,0,1,Double(timeInterval)],[0,0,0,0,0,1]])
         
